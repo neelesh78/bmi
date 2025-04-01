@@ -1,0 +1,186 @@
+/* Importing Google Font for a modern look */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #74ABE2, #5563DE);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container Styling */
+.container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Header Styling */
+.header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Input Fields Styling */
+.height, .weight {
+  margin-bottom: 1rem;
+}
+
+.height-info, .weight-info {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-weight: 500;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e52e71;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+  border-color: #ff8a00;
+  outline: none;
+}
+
+/* Button Styling */
+.calculate-bmi {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.calculate-bmi button {
+  background-color: #ff8a00;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.calculate-bmi button:hover {
+  background-color: #e52e71;
+  transform: scale(1.05);
+}
+
+/* Result Display Styling */
+.result {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+  padding: 0.75rem;
+  background-color: #fff0f5;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* Additional CSS classes for dynamic color changes */
+.bmi-underweight {
+    color: #3498db; /* Blue for underweight */
+  }
+  .bmi-normal {
+    color: #2ecc71; /* Green for normal */
+  }
+  .bmi-overweight {
+    color: #f1c40f; /* Yellow for overweight */
+  }
+  .bmi-obese {
+    color: #e74c3c; /* Red for obese */
+  }
+
+  #bmi-status {
+    font-weight: 600; /* Semi-bold */
+  }
+  
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+   width: 400px;
+   background-color: white;
+   border-radius: 10px;
+   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); 
+   text-align: center;
+}
+
+.header {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    background-color: green;
+    color: white;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    outline: none;
+    margin: 10px;
+}
+
+button {
+    width: 90%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.result {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#bmi-value, #bmi-status {
+    color: green;
+} */
